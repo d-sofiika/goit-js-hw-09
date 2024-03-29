@@ -34,8 +34,12 @@ function handleSubmit(event) {
         alert("Усі поля форми мають бути заповнені");
         console.log("Error");
     } else {
+    alert("Дякуємо, форму успішно відправлено!");
     console.log("send");
     console.log(localStorage.getItem(storageKey));
     event.currentTarget.reset();
-    localStorage.removeItem(storageKey);}
+    localStorage.removeItem(storageKey);
+    
+    }
+    
 }
